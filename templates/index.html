@@ -1,1 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AI Presentation Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Generate a PowerPoint Presentation</h1>
+            <form action="/" method="post">
+                <div class="input-group">
+                    <label for="topic">Enter the Topic:</label>
+                    <input type="text" id="topic" name="topic" placeholder="Enter a topic for your presentation" required>
+                </div>
+                <button type="submit" class="submit-btn">Generate Presentation</button>
+            </form>
+            <p class="instructions">Just type the topic, and we will generate a comprehensive presentation for you!</p>
+        </div>
+    </div>
+</body>
+</html>
 
